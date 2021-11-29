@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+           
+            background: url('./tony.jpg') no-repeat center center/cover;
+            height: 250vh;
+            width: 100%;
+
+
+        }
+        
+
+        body::before {
+            content: "";
+            background-color: rgb(71, 46, 184); 
+            position: absolute;
+            height: 265vh;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.50;
+            top: 0px;
+            left: 0px;
+           
+
+        }
+        h1{
+            font-size: 90px;
+            text-align: center;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(2, 2, 63, 0.342);
+            margin: 100px 450px;
+            padding: 20px 20px;
+            
+
+        }
+
+        .content1 {
+            display: block;
+            background-color: rgb(255, 255, 255);
+            height: 20px;
+            width: 400px;
+            color: rgb(0, 0, 0);
+            /* text-align: center; */
+            margin: 20px;
+            padding: 20px;
+            font-weight: bold;
+            border-radius: 20px;
+            /* background-color: blue; */
+
+        }
+        .content2{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 7px;
+            padding: 10px;
+           
+        }
+
+        p {
+            color: white;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        #button {
+            color: rgb(255, 255, 255);
+            background-color: red;
+            height: 30px;
+            width: 400px;
+            border-radius: 20px;
+           
+        }
+        #dim{
+            height: 40px;
+            width: 400px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Survey Form</h1>
+    <p>Click on one of the text labels to toggle the related radio button:</p>
+    <form action="#">
+        <div class="content2">
+            <label for="Name">Name:</label>
+            <input type="text" id="dim" placeholder="Enter Your Name">
+        </div>
+        <div class="content2">
+            <label for="Email">Email:</label>
+            <input type="email" id="dim" placeholder="Enter Your Email">
+        </div>
+        <div class="content2">
+            <label for="Number">Phone No.</label>
+            <input type="number" id="dim" placeholder="Enter Your Number">
+        </div>
+        <div class="content1">
+            <input type="radio" name="html" id="column" value="HTM">
+            <label for="html">Html</label>
+        </div>
+        <div class="content1">
+            <input type="radio" name="css" value="CSS" class="column">
+            <label for="css">CSS</label>
+        </div>
+        <div class="content1">
+            <input type="radio" name="css" value="CSS" id="column">
+            <label for="css">JavaScript</label>
+        </div>
+        <div class="content1">
+            <input type="radio" name="css" value="CSS" id="column">
+            <label for="css">NodeJs</label>
+        </div>
+        <div class="content1">
+            <input type="radio" name="css" value="CSS" id="column">
+            <label for="css">Php</label>
+        </div>
+        <div class="content1">
+            <input type="radio" name="css" value="CSS" id="column">
+            <label for="css">MongoDB</label>
+        </div>
+
+        <input type="button" value="Submit" id="button">
+
+    </form>
+</body>
+
+</html>
